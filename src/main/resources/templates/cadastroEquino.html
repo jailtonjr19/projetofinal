@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastros.css">
+    <title>CGRA</title>
+</head>
+<body>
+    <h1 id="registro">Registro</h1>
+    
+    <form action="">
+        <div id="forms">
+            <input type="text" name="raca" id="raca" placeholder="Raça">
+       
+            <input type="date" name="nasc" id="nasc" placeholder="Data de Nascimento"><br>
+        
+            <input type="text" name="cor" id="cor" placeholder="Pelagem (Cor)">
+        
+            <input type="number" name="numero" id="numero" placeholder="Numeração do Brinco">
+        </div>
+
+    <h1 id="controle">Controle Genético</h1>
+
+        <div id="forms2">
+            <input type="text" name="mãe" id="mãe" placeholder="Código da Mãe">
+
+            <input type="text" name="pai" id="pai" placeholder="Código do Pai"><br>
+        </div>
+
+        <div>
+            <label>Digite um código para o animal:</label><input type="text" name="codigo" id="codigo" placeholder="Ex: A-111">
+        </div>
+
+        <div>   
+            <label for="file"></label>
+            <input type="file" name="file" />
+        </div>
+        <div>   
+            <label for="file"></label>
+            <input type="file" name="file" />
+        </div>
+
+        <div>
+            <button type="submit" id="salvar">Salvar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </div>
+
+    </form>
+</body>
+</html>
