@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>CGRA</title>
+</head>
+<body>
+
+	<div>
+		<nav>
+			<div class="nav-wrapper light-green darken-3">
+				<a href="/" class="brand-logo">CGRA</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<h1>Adicionar Animal</h1>
+	<form class="container" action="/equino" method="post">
+		<div class="row">
+			<div class="input-field col s3">
+				<label>Raça: </label> <input type="text" name="raca">
+			</div>
+			<div class="input-field col s3">
+				<label>Data de Nascimento: </label> <input type="text" name="nasc">
+			</div>
+			<div class="input-field col s3">
+				<label>Pelagem (COR): </label> <input type="text" name="cor">
+			</div>
+			<div class="input-field col s3">
+				<label>Nº Brinco ou Ferragem:</label> <input type="text"
+					name="brinco">
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<label>Código Pai: </label> <input type="text" name="pai">
+			</div>
+			<div class="input-field col s6">
+				<label>Código Mãe: </label> <input type="text" name="mae">
+			</div>
+		</div>
+
+		<div>
+			<button type="submit" class="waves-effect waves-light btn">Salvar</button>
+			<button type="reset" class="waves-effect waves-light btn">Limpar</button>
+		</div>
+	</form>
+</body>
+</html>
