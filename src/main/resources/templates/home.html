@@ -2,13 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<!--Import Google Icon Font-->
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-<!--Import materialize.css-->
+	rel="stylesheet" />
+
+<link href="login.css" rel="stylesheet" />
+
 <link type="text/css" rel="stylesheet"
 	href="materialize/css/materialize.min.css" media="screen,projection" />
-
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CGRA</title>
@@ -17,18 +18,49 @@
 	<div>
 		<nav>
 			<div class="nav-wrapper light-green darken-3">
-				<a href="/" class="brand-logo">CGRA</a>
+				<a href="/" class="brand-logo"> <img src="/logo.png" height="80"
+					width="80">
+				</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="/cadastrofuncionario/form">Cadastro de Funcionarios</a></li>
-					<li><a href="/cadastros">Cadastro de Animais</a></li>
-					<li><a href="/animais">Animais</a></li>
-
+					<li><a href="/login">Login</a></li>
+					<li><a href="/cadastro">Cadastre-se</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<h3>Bem vindo ao mundo animal</h3>
-	<div></div>
+	<div class="Home-anuncio">
+		<div class="container">
+			<h2 class="text-bv">Bem vindo ao mundo animal</h2>
+			<div class="sobre-nos">
+				<h2 class="text-header">O que é CGRA ?</h2>
+				<p>O Controle Genético e Registro Animal (CGRA), é uma
+					plataforma digital que cuida do registro e controle genético de
+					diversos tipos de animais em sua propriedade rural. Tem a utilidade
+					de aperfeiçoar sua produção atravez do controle genético, que
+					possibilita você a trabalhar com um melhoramento genético em sua
+					propriedade.</p>
+			</div>
+			<div class="importancia-registro">
+				<h2 class="text-header">Qual a importância do registro animal?</h2>
+				<p>Além do reconhecimento do animal como seu. Em caso de um
+					possível furto é preciso a comprovação que o animal é seu,
+					portanto, o registro no CGRA serve como comprovação de posse do
+					animal.</p>
+			</div>
+			<div class="controle-genetico">
+				<h2 class="text-header">Para que serve o controle genético?</h2>
+				<p>O controle genético tem como finalidade, evitar o cruzamento
+					de animais do mesmo parentesco, esse tipo de cruzamento de mesmo
+					sangue pode causar mutações genéticas nos animais resultantes da
+					relação.</p>
+				<p>Outra finalidade desse controle, é o melhoramento genético.
+					Que serve para prolongar durante as gerações futuras,
+					características particulares de um determinado indivíduo, que podem
+					ser voltadas para uma boa produção de carne, leite ou “trabalho”.</p>
+			</div>
+
+		</div>
+	</div>
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>

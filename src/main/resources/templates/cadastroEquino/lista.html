@@ -17,10 +17,11 @@
 	<div>
 		<nav>
 			<div class="nav-wrapper light-green darken-3">
-				<a href="/" class="brand-logo">Equinos</a>
+				<a href="/index" class="brand-logo">
+				Equinos
+				</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="/">Inicio</a></li>
-					<li><a href="/animais">Animais</a></li>
+					<li><a href="/animais">Voltar</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -31,9 +32,10 @@
 				<th>Raça</th>
 				<th>Nascimento</th>
 				<th>Pelagem (Cor)</th>
-				<th>Brinco</th>
+				<th>Ferragem</th>
 				<th>Pai</th>
 				<th>Mãe</th>
+				<th>Ações</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,6 +46,13 @@
 				<td><span th:text="${Equino.brinco}"></span></td>
 				<td><span th:text="${Equino.pai}"></span></td>
 				<td><span th:text="${Equino.mae}"></span></td>
+				
+				<td>
+					<a class="btn red" th:href="@{Equino/{id}(id=${Equino.id})}">
+						Excluir
+					</a>
+				</td>
+				
 			</tr>
 		</tbody>
 	</table>

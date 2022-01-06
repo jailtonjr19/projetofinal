@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link href="login.css" rel="stylesheet"/>
+<link type="text/css" rel="stylesheet"
+	href="materialize/css/materialize.min.css" media="screen,projection" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CGRA</title>
+</head>
+<body>
+	<div class="Login-form">
+		<div class="container">
+			<div class="main-div">
+				<div class="texto-header">
+					<h2>Cadastro de Usuário</h2>
+					<p>Crie seu usuario no sistema</p>
+				</div>
+				<form method="post" action="salvarUsuario">
+					<div class="form-group">
+						<input class="form-control" type="text" name="nome" placeholder="NOME COMPLETO">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="number" name="cpf" placeholder="CPF">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="password" name="senha" placeholder="SENHA">
+					</div>
+					<button type="submit" class="btn light-green darken-1">cadastrar</button>
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

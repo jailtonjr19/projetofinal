@@ -5,37 +5,52 @@
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<title>CGRA</title>
+<title>CGRA</title>
 </head>
 <body>
-	<h2>Adicionar Animal</h2>
+	<div>
+		<nav>
+			<div class="nav-wrapper light-green darken-3">
+				<a href="/index" class="brand-logo"> <img src="/logo.png" height="80"
+					width="80">
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/cadastros">Voltar</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<form class="container" action="/bovino" method="post">
+		<h1>Adicionar Bovinos</h1>
 		<div class="row">
 			<div class="input-field col s3">
-				<label>Raça: </label> <input type="text" name="raca">
+				<label>Raça: </label> <br> <input type="text" name="raca">
 			</div>
 			<div class="input-field col s3">
-				<label>Data de Nascimento: </label> <input type="text" name="nasc">
+				<label>Data de Nascimento: </label> <br> <input type="text"
+					name="nasc">
 			</div>
 			<div class="input-field col s3">
-				<label>Pelagem (COR): </label> <input type="text" name="cor">
+				<label>Pelagem (COR): </label> <br> <input type="text"
+					name="cor">
 			</div>
 			<div class="input-field col s3">
-				<label>Numeração do brinco:</label> <input type="text" name="brinco">
+				<label>Numeração do brinco:</label> <br> <input type="text"
+					name="brinco">
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-				<label>Código Pai: </label> <input type="text" name="pai">
+				<label>Código Pai: </label> <br> <input type="text" name="pai">
 			</div>
 			<div class="input-field col s6">
-				<label>Código Mãe: </label> <input type="text" name="mae">
+				<label>Código Mãe: </label> <br> <input type="text" name="mae">
 			</div>
 		</div>
 
 		<div>
-			<button type="submit" class="waves-effect waves-light btn">Salvar</button>
-			<button type="reset" class="waves-effect waves-light btn">Limpar</button>
+			<button type="submit" class="btn light-green darken-3">Salvar</button>
+			<button type="reset" class="btn red">Limpar</button>
 		</div>
 	</form>
 </body>

@@ -17,10 +17,9 @@
 	<div>
 		<nav>
 			<div class="nav-wrapper light-green darken-3">
-				<a href="/" class="brand-logo">Ovinos e Caprinos</a>
+				<a href="/index" class="brand-logo">Ovinos e Caprinos</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="">Inicio</a></li>
-					<li><a href="">Animais</a></li>
+					<li><a href="/animais">Voltar</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -34,6 +33,7 @@
 				<th>Brinco</th>
 				<th>Pai</th>
 				<th>Mãe</th>
+				<th>Ações</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,6 +44,12 @@
 				<td><span th:text="${Caprino.brinco}"></span></td>
 				<td><span th:text="${Caprino.pai}"></span></td>
 				<td><span th:text="${Caprino.mae}"></span></td>
+				
+				<td>
+					<a class="btn red" th:href="@{Caprino/{id}(id=${Caprino.id})}">
+						Excluir
+					</a>
+				</td>
 			</tr>
 		</tbody>
 	</table>

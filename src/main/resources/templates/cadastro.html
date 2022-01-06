@@ -2,47 +2,47 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<!--Import Google Icon Font-->
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-<!--Import materialize.css-->
+	rel="stylesheet" />
+
+<link href="login.css" rel="stylesheet" />
+
 <link type="text/css" rel="stylesheet"
 	href="materialize/css/materialize.min.css" media="screen,projection" />
-
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CGRA</title>
 </head>
 <body>
-    <div>
-        <nav>
-            <div class="nav-wrapper light-green darken-3">
-            <a href="/" class="brand-logo">CGRA</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="/animais">Animais</a></li>
-            </ul>
-            </div>
-        </nav>
-    </div>
-    <h3>Selecione o tipo de animal para cadastro</h3>
-    <div>
-    <div>
-    <h2>
-		<a href="/bovino/form" class="waves-effect waves-light btn"><i
-			class="material-icons"></i>Bovinos </a>
-	</h2>
-	    <h2>
-		<a href="/caprino/form" class="waves-effect waves-light btn"><i
-			class="material-icons"></i>Caprinos/Ovinos </a>
-	</h2>
-	    <h2>
-		<a href="/equino/form" class="waves-effect waves-light btn"><i
-			class="material-icons"></i>Equinos </a>
-	</h2>
-    </div>
-    
-    </div>
+	<div>
+		<nav>
+			<div class="nav-wrapper light-green darken-3">
+				<a href="/index" class="brand-logo"> <img src="/logo.png" height="80"
+					width="80">
+				</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/cadastros">Cadastro Animal</a></li>
+					<li><a href="/animais">Animais</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="cadastro-anuncio">
+		<div class="container">
+			<h1 class="text-index">Selecione o tipo de Animal para Cadastro</h1>
+
+			<div class="bovino">
+				<h3><a href="/bovino/form" class="cadastro-link"> Bovinos</a></h3>
+			</div>
+			<div class="caprino">
+				<h3><a href="/caprino/form" class="cadastro-link">Caprinos e Ovinos</a></h3>
+			</div>
+			<div class="equino">
+				<h3><a href="/equino/form" class="cadastro-link"> Equinos</a></h3>
+			</div>
+		</div>
+	</div>
 	<!--JavaScript at end of body for optimized loading-->
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
